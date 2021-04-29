@@ -1,0 +1,6 @@
+framework module Pods_AshanMadhuwantha_Cobsccomp192p_045Tests {
+  umbrella header "Pods-AshanMadhuwantha-Cobsccomp192p-045Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
