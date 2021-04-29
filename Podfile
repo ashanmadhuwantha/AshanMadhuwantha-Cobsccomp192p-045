@@ -10,6 +10,7 @@ target 'AshanMadhuwantha-Cobsccomp192p-045' do
   pod 'Firebase/Database'
   pod 'Kingfisher'
   pod 'Loaf'
+  pod 'Firebase/Storage'
 
   target 'AshanMadhuwantha-Cobsccomp192p-045Tests' do
     inherit! :search_paths
