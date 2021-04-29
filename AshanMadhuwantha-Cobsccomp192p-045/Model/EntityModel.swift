@@ -23,5 +23,6 @@ struct FoodItem {
     var foodDescription: String
     var foodPrice: String
     var discount: Int
+    var availability: Bool
     
 }
