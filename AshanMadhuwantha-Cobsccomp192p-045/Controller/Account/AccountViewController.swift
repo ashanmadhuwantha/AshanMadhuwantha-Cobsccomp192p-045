@@ -11,10 +11,13 @@ import Loaf
 
 class AccountViewController: UIViewController {
     
+    let sessionMGR = SessionManager()
+    
     @IBOutlet weak var txtFrom: UITextField!
     @IBOutlet weak var lblTotal: UILabel!
     @IBOutlet weak var txtTo: UITextField!
     @IBOutlet weak var tblOrders: UITableView!
+    @IBOutlet weak var btnLogout: UIButton!
     
     let datePicker = UIDatePicker()
         let dateFormatter = DateFormatter()
@@ -32,6 +35,8 @@ class AccountViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        btnLogout.layer.cornerRadius = 20
+        
         tblOrders.register(UINib(nibName: OrderSummaryTableViewCell.nibName, bundle: nil), forCellReuseIdentifier: OrderSummaryTableViewCell.reuseIdentifier)
                
 
@@ -45,7 +50,12 @@ class AccountViewController: UIViewController {
             txtTo.text = dateFormatter.string(from: Date())
         }
     
-
+    @IBAction func onLogoutPressed(_ sender: UIButton) {
+        
+        sessionMGR.clearUserLoggedState()
+        self.performSegue(withIdentifier: "AccountToLogin", sender: nil)
+    }
+    
 }
 
 extension AccountViewController {

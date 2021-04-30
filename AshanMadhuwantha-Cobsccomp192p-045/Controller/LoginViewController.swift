@@ -26,6 +26,9 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func onForgotPasswordPressed(_ sender: UIButton) {
+        Auth.auth().sendPasswordReset(withEmail: txtEmail.text ?? "") { error in
+         
+        }
         
     }
     @IBAction func onSignUpPressed(_ sender: UIButton) {
