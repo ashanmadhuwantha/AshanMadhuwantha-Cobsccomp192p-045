@@ -28,6 +28,8 @@
 		64A83E62263BC9EA00AD459F /* CategoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64A83E60263BC9EA00AD459F /* CategoryCollectionViewCell.xib */; };
 		64A83E67263C0E9900AD459F /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A83E66263C0E9900AD459F /* AccountViewController.swift */; };
 		64A83E6C263C0EC100AD459F /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A83E6B263C0EC100AD459F /* OrderViewController.swift */; };
+		64A83E86263C6DE400AD459F /* OrderSummaryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A83E84263C6DE400AD459F /* OrderSummaryTableViewCell.swift */; };
+		64A83E87263C6DE400AD459F /* OrderSummaryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 64A83E85263C6DE400AD459F /* OrderSummaryTableViewCell.xib */; };
 		64D1813426386D1600006DCE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D1813326386D1600006DCE /* AppDelegate.swift */; };
 		64D1813626386D1600006DCE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D1813526386D1600006DCE /* SceneDelegate.swift */; };
 		64D1813826386D1600006DCE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64D1813726386D1600006DCE /* ViewController.swift */; };
@@ -84,6 +86,8 @@
 		64A83E60263BC9EA00AD459F /* CategoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCollectionViewCell.xib; sourceTree = "<group>"; };
 		64A83E66263C0E9900AD459F /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		64A83E6B263C0EC100AD459F /* OrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
+		64A83E84263C6DE400AD459F /* OrderSummaryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderSummaryTableViewCell.swift; sourceTree = "<group>"; };
+		64A83E85263C6DE400AD459F /* OrderSummaryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderSummaryTableViewCell.xib; sourceTree = "<group>"; };
 		64D1813026386D1600006DCE /* AshanMadhuwantha-Cobsccomp192p-045.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AshanMadhuwantha-Cobsccomp192p-045.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		64D1813326386D1600006DCE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		64D1813526386D1600006DCE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -161,6 +165,8 @@
 				64A83E3F263B43F000AD459F /* CategoryTableViewCell.xib */,
 				64A83E5F263BC9EA00AD459F /* CategoryCollectionViewCell.swift */,
 				64A83E60263BC9EA00AD459F /* CategoryCollectionViewCell.xib */,
+				64A83E84263C6DE400AD459F /* OrderSummaryTableViewCell.swift */,
+				64A83E85263C6DE400AD459F /* OrderSummaryTableViewCell.xib */,
 			);
 			path = TableViewCells;
 			sourceTree = "<group>";
@@ -411,6 +417,7 @@
 			files = (
 				64A83E092639CE3600AD459F /* OrderTableViewCell.xib in Resources */,
 				64A83E41263B43F000AD459F /* CategoryTableViewCell.xib in Resources */,
+				64A83E87263C6DE400AD459F /* OrderSummaryTableViewCell.xib in Resources */,
 				64D1814026386D1700006DCE /* LaunchScreen.storyboard in Resources */,
 				64D1818026390E1E00006DCE /* GoogleService-Info.plist in Resources */,
 				64A83E62263BC9EA00AD459F /* CategoryCollectionViewCell.xib in Resources */,
@@ -555,6 +562,7 @@
 				64A83E0E263AA09900AD459F /* SessionMananger.swift in Sources */,
 				64D1813826386D1600006DCE /* ViewController.swift in Sources */,
 				64A83E0126398D3600AD459F /* FoodTableViewCell.swift in Sources */,
+				64A83E86263C6DE400AD459F /* OrderSummaryTableViewCell.swift in Sources */,
 				64A83E61263BC9EA00AD459F /* CategoryCollectionViewCell.swift in Sources */,
 				64D1813426386D1600006DCE /* AppDelegate.swift in Sources */,
 				64A83E56263BC24400AD459F /* MenuViewController.swift in Sources */,
