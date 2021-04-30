@@ -123,9 +123,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="40Y-ay-b6j">
-                                <rect key="frame" x="10" y="84" width="355" height="450"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="40Y-ay-b6j">
+                                <rect key="frame" x="10" y="97.5" width="355" height="440.5"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <connections>
                                     <outlet property="dataSource" destination="Uo8-cF-fV4" id="s1g-4T-1Ie"/>
@@ -176,7 +175,8 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="JgW-L6-jH6"/>
                                 </constraints>
-                                <state key="normal" title="Button">
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <state key="normal" title="Logout">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -188,7 +188,10 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="8cj-ET-4DG" firstAttribute="top" secondItem="MRO-h4-Lk6" secondAttribute="top" constant="20" id="2gf-60-PvV"/>
+                            <constraint firstItem="40Y-ay-b6j" firstAttribute="top" secondItem="WfJ-PG-xp0" secondAttribute="bottom" constant="20" id="Mfu-9S-FD3"/>
                             <constraint firstItem="WfJ-PG-xp0" firstAttribute="top" secondItem="MRO-h4-Lk6" secondAttribute="top" constant="20" id="Odw-RC-zNo"/>
+                            <constraint firstItem="40Y-ay-b6j" firstAttribute="leading" secondItem="MRO-h4-Lk6" secondAttribute="leading" constant="10" id="Tfk-5V-aJ0"/>
+                            <constraint firstItem="QeH-kM-bCJ" firstAttribute="top" secondItem="40Y-ay-b6j" secondAttribute="bottom" constant="20" id="Wau-Vz-W4H"/>
                             <constraint firstItem="7aG-9L-NfK" firstAttribute="top" secondItem="MRO-h4-Lk6" secondAttribute="top" constant="40" id="j3O-bm-DCq"/>
                             <constraint firstItem="QeH-kM-bCJ" firstAttribute="leading" secondItem="MRO-h4-Lk6" secondAttribute="leading" constant="60" id="l66-U8-n4x"/>
                             <constraint firstItem="8cj-ET-4DG" firstAttribute="leading" secondItem="WfJ-PG-xp0" secondAttribute="trailing" constant="20" id="los-6T-jPK"/>
@@ -196,6 +199,7 @@
                             <constraint firstItem="MRO-h4-Lk6" firstAttribute="trailing" secondItem="7aG-9L-NfK" secondAttribute="trailing" constant="20" id="sh5-Qa-rhG"/>
                             <constraint firstItem="WfJ-PG-xp0" firstAttribute="leading" secondItem="MRO-h4-Lk6" secondAttribute="leading" constant="20" id="w05-vo-6OG"/>
                             <constraint firstItem="MRO-h4-Lk6" firstAttribute="trailing" secondItem="QeH-kM-bCJ" secondAttribute="trailing" constant="60" id="xpW-md-Kl2"/>
+                            <constraint firstItem="MRO-h4-Lk6" firstAttribute="trailing" secondItem="40Y-ay-b6j" secondAttribute="trailing" constant="10" id="zfo-Qw-qux"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Account" image="user" id="bOL-zt-6WE">
