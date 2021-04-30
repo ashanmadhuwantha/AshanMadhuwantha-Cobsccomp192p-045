@@ -21,8 +21,17 @@ struct FoodItem {
     var foodName: String
     var foodId: String
     var foodDescription: String
-    var foodPrice: String
+    var foodPrice: Double
     var discount: Int
+    var foodImgRes: String
+    var foodCategory: String
     var availability: Bool
     
 }
+
+struct Category {
+    
+    var categoryName: String
+    var categoryId: String
+    
+    }

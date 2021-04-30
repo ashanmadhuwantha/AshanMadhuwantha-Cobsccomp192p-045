@@ -86,6 +86,11 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="lblFoodDescription" destination="bDz-xT-pJX" id="hWm-sW-GKR"/>
+                <outlet property="lblFoodName" destination="jfJ-bS-W3y" id="G3p-5d-9rd"/>
+                <outlet property="lblPrice" destination="dKC-fP-uip" id="opf-1d-lHp"/>
+            </connections>
             <point key="canvasLocation" x="286.95652173913044" y="118.52678571428571"/>
         </tableViewCell>
     </objects>

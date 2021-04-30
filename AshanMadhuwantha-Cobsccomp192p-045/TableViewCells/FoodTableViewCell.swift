@@ -6,9 +6,13 @@
 //
 
 import UIKit
+import Kingfisher
 
 class FoodTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var lblFoodName: UILabel!
+    @IBOutlet weak var lblFoodDescription: UILabel!
+    @IBOutlet weak var lblPrice: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -20,4 +24,10 @@ class FoodTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    func configXIB(foodItem: FoodItem, index: Int) {
+        lblFoodName.text = foodItem.foodName
+        lblFoodDescription.text = foodItem.foodDescription
+       
+        
+    }
 }

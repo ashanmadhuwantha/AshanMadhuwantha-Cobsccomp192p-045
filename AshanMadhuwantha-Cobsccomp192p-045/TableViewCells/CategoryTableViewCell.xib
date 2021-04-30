@@ -4,44 +4,53 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="86" id="KGk-i7-Jjw" customClass="CategoryTableViewCell" customModule="AshanMadhuwantha_Cobsccomp192p_045" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="398" height="86"/>
+            <rect key="frame" x="0.0" y="0.0" width="398" height="100"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="398" height="86"/>
+                <rect key="frame" x="0.0" y="0.0" width="398" height="100"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TCF-xS-iiE">
-                        <rect key="frame" x="20" y="32.5" width="120" height="21"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pf3-2W-V6t">
-                        <rect key="frame" x="318" y="28" width="60" height="30"/>
-                        <color key="backgroundColor" red="0.74674479169999997" green="0.33336444739999999" blue="0.2462593388" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jN5-N0-ET0">
+                        <rect key="frame" x="0.0" y="10" width="398" height="80"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TCF-xS-iiE">
+                                <rect key="frame" x="20" y="29.5" width="120" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="60" id="SKI-ls-lcW"/>
+                            <constraint firstItem="TCF-xS-iiE" firstAttribute="leading" secondItem="jN5-N0-ET0" secondAttribute="leading" constant="20" id="HNJ-84-1JE"/>
+                            <constraint firstItem="TCF-xS-iiE" firstAttribute="centerY" secondItem="jN5-N0-ET0" secondAttribute="centerY" id="bvr-An-7Zx"/>
                         </constraints>
-                        <state key="normal" title="Delete">
-                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        </state>
-                    </button>
+                    </view>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="trailing" secondItem="pf3-2W-V6t" secondAttribute="trailing" constant="20" id="FnU-xZ-Ol8"/>
-                    <constraint firstItem="TCF-xS-iiE" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="aZU-Z2-CK6"/>
-                    <constraint firstItem="TCF-xS-iiE" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="i4a-8i-J6O"/>
-                    <constraint firstItem="pf3-2W-V6t" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="yyV-fL-Q2O"/>
+                    <constraint firstAttribute="trailing" secondItem="jN5-N0-ET0" secondAttribute="trailing" id="1A6-3R-TLJ"/>
+                    <constraint firstAttribute="bottom" secondItem="jN5-N0-ET0" secondAttribute="bottom" constant="10" id="JqJ-ZB-CQC"/>
+                    <constraint firstItem="jN5-N0-ET0" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="YHU-QA-LgC"/>
+                    <constraint firstItem="jN5-N0-ET0" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="dDP-wV-LYs"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
-            <point key="canvasLocation" x="188.40579710144928" y="104.46428571428571"/>
+            <connections>
+                <outlet property="lblCategoryName" destination="TCF-xS-iiE" id="zmN-eN-gHb"/>
+            </connections>
+            <point key="canvasLocation" x="352" y="-6"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
