@@ -73,21 +73,42 @@
                                     <segment title="Pending"/>
                                     <segment title="Preparing"/>
                                     <segment title="Ready"/>
-                                    <segment title="Complete"/>
+                                    <segment title="Done"/>
+                                    <segment title="Arriving"/>
+                                    <segment title="Cancelled"/>
                                 </segments>
+                                <connections>
+                                    <action selector="onSegChanged:" destination="tL0-RG-HKF" eventType="valueChanged" id="CcQ-nF-Gfk"/>
+                                </connections>
                             </segmentedControl>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6Oh-t8-ec3">
+                                <rect key="frame" x="10" y="61" width="355" height="547"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="tL0-RG-HKF" id="U7s-J9-myw"/>
+                                    <outlet property="delegate" destination="tL0-RG-HKF" id="CXd-Qk-Vua"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="tTn-Se-f72"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="tTn-Se-f72" firstAttribute="trailing" secondItem="6Oh-t8-ec3" secondAttribute="trailing" constant="10" id="4CB-lg-SAv"/>
                             <constraint firstItem="tTn-Se-f72" firstAttribute="trailing" secondItem="J34-7j-Oj4" secondAttribute="trailing" constant="20" id="FwV-Z8-cbn"/>
+                            <constraint firstItem="6Oh-t8-ec3" firstAttribute="top" secondItem="J34-7j-Oj4" secondAttribute="bottom" constant="10" id="f6l-3v-VBU"/>
                             <constraint firstItem="J34-7j-Oj4" firstAttribute="leading" secondItem="tTn-Se-f72" secondAttribute="leading" constant="20" id="gTk-H3-cCw"/>
+                            <constraint firstItem="6Oh-t8-ec3" firstAttribute="leading" secondItem="tTn-Se-f72" secondAttribute="leading" constant="10" id="qdp-vd-5Sd"/>
+                            <constraint firstItem="tTn-Se-f72" firstAttribute="bottom" secondItem="6Oh-t8-ec3" secondAttribute="bottom" constant="10" id="rzu-65-U8y"/>
                             <constraint firstItem="J34-7j-Oj4" firstAttribute="top" secondItem="tTn-Se-f72" secondAttribute="top" constant="20" id="uGd-tc-Hz4"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Order" image="choices" id="ckL-a2-g5D">
                         <color key="badgeColor" red="0.74674479169999997" green="0.33336444739999999" blue="0.2462593388" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </tabBarItem>
+                    <connections>
+                        <outlet property="segtabs" destination="J34-7j-Oj4" id="rcg-CZ-8BX"/>
+                        <outlet property="tblOrders" destination="6Oh-t8-ec3" id="mT1-a3-nWP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wbd-Re-d4o" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -234,13 +255,17 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="pcd-Rc-kTB"/>
                                 </constraints>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="a3r-sd-2He">
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="a3r-sd-2He">
                                     <size key="itemSize" width="128" height="128"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells/>
+                                <connections>
+                                    <outlet property="dataSource" destination="xFG-Sk-4st" id="8Nk-dj-DML"/>
+                                    <outlet property="delegate" destination="xFG-Sk-4st" id="FY1-4a-WVs"/>
+                                </connections>
                             </collectionView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="rTj-YJ-BaY">
                                 <rect key="frame" x="10" y="50" width="315" height="419"/>

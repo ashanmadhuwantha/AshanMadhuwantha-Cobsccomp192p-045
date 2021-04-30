@@ -153,7 +153,7 @@ extension PreviewViewController: UICollectionViewDelegate, UICollectionViewDataS
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if let cell = collectionViewCategories.dequeueReusableCell(withReuseIdentifier: CategoryCollectionViewCell.reuseIdentifier,
-                                                                   for: indexPath) as? CategoryCollectionViewCell {
+            for: indexPath) as? CategoryCollectionViewCell {
             cell.configXIB(category: categoryList[indexPath.row])
             return cell
         }
