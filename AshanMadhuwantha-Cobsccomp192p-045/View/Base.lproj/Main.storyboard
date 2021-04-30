@@ -609,7 +609,7 @@
                                     <constraint firstAttribute="height" constant="40" id="fzi-yB-IO2"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" textContentType="password"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to NIBM Cafe Manager" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qiP-LP-KNg">
                                 <rect key="frame" x="72.5" y="200" width="230" height="18"/>
@@ -860,7 +860,7 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="Dzo-QL-trk"/>
-        <segue reference="8D7-fX-mh0"/>
+        <segue reference="EJO-Iv-qPp"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="camera.viewfinder" catalog="system" width="128" height="115"/>
