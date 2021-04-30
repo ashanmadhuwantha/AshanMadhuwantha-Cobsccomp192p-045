@@ -227,10 +227,47 @@
                     <view key="view" contentMode="scaleToFill" id="4gr-bG-hia">
                         <rect key="frame" x="0.0" y="0.0" width="335" height="528"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="QRP-B6-qey">
+                                <rect key="frame" x="10" y="10" width="315" height="30"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="pcd-Rc-kTB"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="a3r-sd-2He">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="rTj-YJ-BaY">
+                                <rect key="frame" x="10" y="50" width="315" height="419"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="xFG-Sk-4st" id="ZcL-LC-ePC"/>
+                                    <outlet property="delegate" destination="xFG-Sk-4st" id="s5d-sU-t2f"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="7ET-yI-2Yi"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="7ET-yI-2Yi" firstAttribute="trailing" secondItem="rTj-YJ-BaY" secondAttribute="trailing" constant="10" id="FHv-MV-mqq"/>
+                            <constraint firstItem="QRP-B6-qey" firstAttribute="top" secondItem="7ET-yI-2Yi" secondAttribute="top" constant="10" id="KvK-Md-L0j"/>
+                            <constraint firstItem="7ET-yI-2Yi" firstAttribute="bottom" secondItem="rTj-YJ-BaY" secondAttribute="bottom" constant="10" id="Xtf-W7-Zyx"/>
+                            <constraint firstItem="rTj-YJ-BaY" firstAttribute="top" secondItem="QRP-B6-qey" secondAttribute="bottom" constant="10" id="ad8-tT-Bk6"/>
+                            <constraint firstItem="QRP-B6-qey" firstAttribute="leading" secondItem="7ET-yI-2Yi" secondAttribute="leading" constant="10" id="h7f-kC-uox"/>
+                            <constraint firstItem="7ET-yI-2Yi" firstAttribute="trailing" secondItem="QRP-B6-qey" secondAttribute="trailing" constant="10" id="mIS-vX-VEB"/>
+                            <constraint firstItem="rTj-YJ-BaY" firstAttribute="leading" secondItem="7ET-yI-2Yi" secondAttribute="leading" constant="10" id="xoG-0k-oW1"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="pHL-gE-x7N"/>
+                    <connections>
+                        <outlet property="collectionViewCategories" destination="QRP-B6-qey" id="WBd-ql-Qf4"/>
+                        <outlet property="tblFoodItems" destination="rTj-YJ-BaY" id="2VN-aS-emi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v2A-7Z-84H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

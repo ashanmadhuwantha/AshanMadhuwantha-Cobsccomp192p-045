@@ -65,7 +65,7 @@ extension CategoryViewController {
                 }
                 for category in data {
                     if let categoryInfo = category.value as? [String: String] {
-                        self.categoryList.append(Category(categoryName: categoryInfo["name"]!, categoryId:category.key))
+                        self.categoryList.append(Category(categoryName: categoryInfo["name"]!, categoryID:category.key))
                     }
                 }
                 self.tblCategory.reloadData()
@@ -74,7 +74,7 @@ extension CategoryViewController {
     }
     
     func removeCategory(category: Category) {
-        databaseReference.child("categories").child(category.categoryId).removeValue() {
+        databaseReference.child("categories").child(category.categoryID).removeValue() {
             error, databaseReference in
             if error != nil {
                 Loaf("Could Not Remove Category", state: .error, sender: self).show()

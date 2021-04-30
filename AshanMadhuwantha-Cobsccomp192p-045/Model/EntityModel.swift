@@ -32,6 +32,6 @@ struct FoodItem {
 struct Category {
     
     var categoryName: String
-    var categoryId: String
+    var categoryID: String
     
     }

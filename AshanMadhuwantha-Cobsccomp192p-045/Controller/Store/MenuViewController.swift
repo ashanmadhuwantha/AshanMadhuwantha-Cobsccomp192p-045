@@ -7,8 +7,9 @@
 
 import UIKit
 import Firebase
-import FirebaseStorage
 import Loaf
+import FirebaseDatabase
+import FirebaseStorage
 
 class MenuViewController: UIViewController {
     
@@ -149,7 +150,7 @@ extension MenuViewController {
                 }
                 for category in data {
                     if let categoryInfo = category.value as? [String: String] {
-                        self.categoryList.append(Category(categoryName: categoryInfo["name"]!, categoryId:category.key))
+                        self.categoryList.append(Category(categoryName: categoryInfo["name"]!, categoryID:category.key))
                     }
                 }
                 self.setupCategoryPicker()
